@@ -1,0 +1,429 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+    font-family: courier;
+    color: #4b635f;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #e1fffa;
+    z-index: 1;
+    border-bottom: 1px solid #364f6b;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Default (Tidak rata tengah) */
+section {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+/*bagian beranda*/
+section#beranda {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    scroll-margin-top: 100px;
+}
+
+section#beranda img {
+    width: 600px;
+    height: auto;
+}
+
+section#beranda .kolom {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section#beranda h2 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #5f5c6d;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+
+section#beranda .desc{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    color: #5f5c6d;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section#beranda p .tbl-pink {
+    background: #3f72af;
+    border-radius: 20px;
+    padding: 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+}
+
+section#beranda .tbl-pink:hover {
+    background: #ad1414;
+}
+
+/* bagian profil */
+section#profil {
+    flex-direction: row;
+    text-align: left;
+    margin-top: 150px;
+    scroll-margin-top: 100px;
+}
+
+section#profil img {
+    width: 600px;
+    height: auto;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.kolom1 {
+    text-align: left;
+}
+
+section#profil h3 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #5f5c6d;
+    width: 100%;
+    line-height: 50px;
+    text-align: left;
+}
+
+section#profil p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    color: #0e1925;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* bagian tentang*/
+section#tentang {
+    flex-direction: row-reverse; /* Gambar di kanan, teks di kiri */
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 20px; /* Menambah jarak antara teks dan gambar */
+    margin-top: 150px;
+    scroll-margin-top: 100px;
+}
+
+section#tentang img {
+    width: 600px;
+    height: auto;
+    margin-left: 50px; 
+    margin-right: auto; 
+    margin-top: 10px;
+}
+
+section#tentang h3 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #5f5c6d;
+    width: 100%;
+    line-height: 50px;
+    text-align: left;
+}
+
+section#tentang p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    color: #0e1925;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+section#tentang .kolom1 {
+    flex: 1; 
+}
+
+/*keanggotaan*/
+section#keanggotaan {
+    text-align: center;
+    width: 100%;
+    margin-top: 150px;
+    scroll-margin-top: 40px;
+}
+
+section#keanggotaan h3 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 35px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    color: #5f5c6d;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.container h4 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 30px;
+    color: #5f5c6d;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+
+.container p{
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    color: #0e1925;
+    margin-top: 10px;
+}
+
+.box {
+    background: #ffb570;
+    color: white;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line {
+    width: 2px;
+    height: 50px;
+    background: #333;
+    margin: 0 auto;
+    position: relative;
+}
+.horizontal-line {
+    width: 60px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: relative;
+}
+
+.list-anggota {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.anggota {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.anggota img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.anggota p {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    color: #0e1925;
+}
+
+/*Footer*/
+#kontak {
+    background: #e1fffa;
+    padding: 30px 0px 40px 0px;
+    margin-top: 150px;
+    scroll-margin-top: 100px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.footer-section img{
+    width: 10%;
+    border-radius: 30%;
+}
+
+.footer-section p{
+    margin-bottom: 5px;
+    font-family: 'Roboto';
+    line-height: 1.15;
+    font-size: 15px;
+}
+
+h5 {
+    font-family: 'Montserrat';
+    font-weight:800;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #5f5c6d;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px 40px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    border-top: 2px solid black;
+    background: #e1fffa;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
