@@ -60,7 +60,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: #807777;
     font-weight: bold;
     text-align: center;
     padding: 0px 16px;
@@ -69,6 +69,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: #000000;
 }
 
 /* Section Default (Tidak rata tengah) */
@@ -212,6 +213,22 @@ section#tentang p {
     margin-bottom: 20px;
     text-align: justify;
     line-height: 1.5;
+}
+
+section#tentang .tbl-infografis {
+    background: #3f72af;
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+}
+
+section#tentang .tbl-infografis:hover {
+    background: #ad1414;
 }
 
 section#tentang .kolom1 {
