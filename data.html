@@ -5,46 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GAPOKTAN</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Tambahkan library Chart.js -->
 </head>
 <body>
     <nav>
         <div class="wrapper">
-            <div class="logo"><a href = ''>GAPOKTANMajuLestari</a></div>
+            <div class="logo"><a href = ''>GAPOKTAN MAJU LESTARI</a></div>
             <div class="menu">
                 <ul>
                     <li><a href="index.html#beranda" class="beranda">Beranda</a></li>
                     <li><a href="index.html#profil" class="profil">Profil</a></li>
-                    <li><a href="index.html#tentang" class="tentang">Tentang</a></li>
+                    <li><a href="#tentang#tentang" class="tentang">Tentang</a></li>
                     <li><a href="index.html#keanggotaan" class="keanggotaan">Keanggotaan</a></li>
-                    <li><a href="data.html" class="informasi">Data</a></li>
+                    <li><a href="infografis.html" class="informasi">Data</a></li>
                     <li><a href="#kontak" class="kontak">Kontak</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="wrapper">
-        <section id="informasi">
-    <canvas id="grafik"></canvas> <!-- Tempat menampilkan grafik -->
-
-    <script>
-        // Ambil elemen canvas
-        const ctx = document.getElementById('grafik').getContext('2d');
-
-        // Buat grafik dengan Chart.js
-        new Chart(ctx, {
-            type: 'bar', // Jenis grafik (bisa 'bar', 'line', 'pie', dll)
-            data: {
-                labels: ['Januari', 'Februari', 'Maret'],
-                datasets: [{
-                    label: 'Pendapatan',
-                    data: [500, 700, 400], // Nilai batang
-                    backgroundColor: ['red', 'blue', 'green']
-                }]
-            }
-        });
-    </script>
-    </section>
+         <section id="pendahuluan">
+            <div>
+                <h3>Data Real Time</h3>
+                <p>Berisikan data real time yang dikelola oleh GAPOKTAN Maju Lestari dalam bentuk tabel</p>
+                <h4>Subjek</h4>
+            </div>
+        </section>
+        <section id="informasi">  
+            <div  class="judul-tabel">
+            <p>Penjualan Jasa, 2024</p>
+            <div class="isi">
+                <div class="tabel-2">
+            <table >
+                <thead>
+                    <tr>
+                        <th>Januari</th>
+                        <th>Februari</th>
+                        <th>Maret</th>
+                        <th>April</th>
+                        <th>Mei</th>
+                        <th>Juni</th>
+                        <th>Juli</th>
+                        <th>Agustus</th>
+                        <th>September</th>
+                        <th>Oktober</th>
+                        <th>November</th>
+                        <th>Desember</th>
+                        <th>Total Jasa</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td>540,000</td> <td>540,000</td> <td>540,000</td> <td>550,000</td> <td>550,000</td>
+                        <td>580,000</td> <td>570,000</td> <td>510,000</td> <td>580,000</td> <td>580,000</td>
+                        <td>580,000</td> <td>590,000</td> <td>6,710,000</td>
+                    </tr>
+                    <tr>
+                        <td>-</td> <td>30,000</td> <td>30,000</td> <td>30,000</td> <td>30,000</td>
+                        <td>30,000</td> <td>30,000</td> <td>30,000</td> <td>30,000</td> <td>30,000</td>
+                        <td>30,000</td> <td>-</td> <td>300,000</td>
+                    </tr>
+                    <tr>
+                        <td>390,000</td> <td>385,000</td> <td>385,000</td> <td>385,000</td> <td>385,000</td>
+                        <td>385,000</td> <td>382,000</td> <td>382,000</td> <td>382,000</td> <td>357,000</td>
+                        <td>357,000</td> <td>367,000</td> <td>4,542,000</td>
+                    </tr>
+                    <tr>
+                        <td>-</td> <td>-</td> <td>-</td> <td>-</td> <td>-</td>
+                        <td>-</td> <td>-</td> <td>-</td> <td>-</td> <td>-</td>
+                        <td>-</td> <td>-</td> <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>590,000</td> <td>585,000</td> <td>585,000</td> <td>580,000</td> <td>640,000</td>
+                        <td>650,000</td> <td>655,000</td> <td>660,000</td> <td>665,000</td> <td>670,000</td>
+                        <td>605,000</td> <td>620,000</td> <td>7,505,000</td>
+                    </tr>
+                    <tr>
+                        <td>0</td> <td>0</td> <td>0</td> <td>0</td> <td>0</td>
+                        <td>0</td> <td>50,000</td> <td>50,000</td> <td>50,000</td> <td>50,000</td>
+                        <td>50,000</td> <td>50,000</td> <td>300,000</td>
+                    </tr>
+                    <tr>
+                        <td>165,000</td> <td>165,000</td> <td>0</td> <td>0</td> <td>170,000</td>
+                        <td>170,000</td> <td>170,000</td> <td>170,000</td> <td>170,000</td> <td>170,000</td>
+                        <td>170,000</td> <td>170,000</td> <td>1,690,000</td>
+                    </tr>
+                    <tr class="jumlah">
+                        <td>1,685,000</td> <td>1,705,000</td> <td>1,540,000</td> <td>1,545,000</td> <td>1,775,000</td>
+                        <td>1,815,000</td> <td>1,857,000</td> <td>1,802,000</td> <td>1,877,000</td> <td>1,857,000</td>
+                        <td>1,792,000</td> <td>1,797,000</td> <td>21,047,000</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="tabel-1">
+            <table>
+                <thead>
+                <tr>
+                    <th>Poktan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Al hidayah</td></tr>
+                <tr><td>Al Hikmah</td></tr>
+                <tr><td>Ngundi Lestari</td></tr>
+                <tr><td>Mandiri</td></tr>
+                <tr><td>Suka Maju</td></tr>
+                <tr><td>Dewi Sri</td></tr>
+                <tr><td>Sunan Ampel</td></tr>
+                <tr><td>Jumlah</td></tr>
+            </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+                    <div class="box_infografis-1">
+                    <p><a href="infografis.html" class="tbl-infografis">Infografis</a></p>
+                    <p><a href="data.html" class="tbl-infografis">Data Real Time</a></p>
+                    <p><a href="grafik.html" class="tbl-infografis">Grafik</a></p>
+                </div>
+        </section>
+        
     </div>
     <div id="kontak">
         <div class="wrapper">
@@ -75,5 +154,6 @@
     <div id="copyright">
         &copy; <b>2025. GAPOKTAN MAJU LESTARI</b> 
     </div>
+    <script src="style.js"></script>
 </body>
 </html>
