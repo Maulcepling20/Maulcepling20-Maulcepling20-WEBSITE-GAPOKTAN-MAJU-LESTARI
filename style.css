@@ -615,32 +615,44 @@ h5 {
         display: block;
         width: 100%;
         text-align: center;
+         flex-wrap: wrap; 
+        justify-content: space-between;
     }
 
     nav .menu {
         width: 100%;
         margin: 0;
+         flex-wrap: wrap; 
+        justify-content: space-between;
     }
 
     nav .menu ul {
         text-align: center;
         margin: auto;
         line-height: 60px;
+         flex-wrap: wrap; 
+        justify-content: space-between;
     }
 
     nav .menu ul li {
         display: inline-block;
         float: none;
+         flex-wrap: wrap; 
+        justify-content: space-between;
     }
 
     section {
         display: block;
+         flex-wrap: wrap; 
+        justify-content: space-between;
     }
 
     section img {
         display: block;
         width: 100%;
         height: auto;
+         flex-wrap: wrap; 
+        justify-content: space-between;
     }
 
     section#informasi {
@@ -648,26 +660,36 @@ h5 {
         width: 100%;
         height: auto;
         gap: auto;
+         flex-wrap: wrap; 
+        justify-content: space-between;
     }
     .judul-tabel {
         height: auto;
+         flex-wrap: wrap; 
+        justify-content: space-between;
     }
     section#informasi .isi {
         width: 100%;
         height: auto;
         gap: auto;
+         flex-wrap: wrap; 
+        justify-content: space-between;
     }
 
     .box_infografis {
         width: 100%;
         height: auto;
         gap: auto;
+         flex-wrap: wrap; 
+        justify-content: space-between;
     }
 
     .box_infografis-1 {
         width: 100%;
         height: auto;
         gap: auto;
+         flex-wrap: wrap; 
+        justify-content: space-between;
     }
 }
 
