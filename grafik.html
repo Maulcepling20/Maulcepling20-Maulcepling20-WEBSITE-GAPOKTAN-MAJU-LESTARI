@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAPOKTAN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Tambahkan library Chart.js -->
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href = ''>GAPOKTAN Maju Lestari</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html#beranda" class="beranda">Beranda</a></li>
+                    <li><a href="index.html#profil" class="profil">Profil</a></li>
+                    <li><a href="index.html#tentang" class="tentang">Tentang</a></li>
+                    <li><a href="index.html#keanggotaan" class="keanggotaan">Keanggotaan</a></li>
+                    <li><a href="data.html" class="informasi">Data</a></li>
+                    <li><a href="#kontak" class="kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <section id="informasi">
+    <canvas id="grafik"></canvas> <!-- Tempat menampilkan grafik -->
+
+    <script>
+        // Ambil elemen canvas
+        const ctx = document.getElementById('grafik').getContext('2d');
+
+        // Buat grafik dengan Chart.js
+        new Chart(ctx, {
+            type: 'bar', // Jenis grafik (bisa 'bar', 'line', 'pie', dll)
+            data: {
+                labels: ['Januari', 'Februari', 'Maret'],
+                datasets: [{
+                    label: 'Pendapatan',
+                    data: [500, 700, 400], // Nilai batang
+                    backgroundColor: ['red', 'blue', 'green']
+                }]
+            }
+        });
+    </script>
+    </section>
+    </div>
+    <div id="kontak">
+        <div class="wrapper">
+        <div class="footer">
+        <div class="footer-section">
+            <h5>Alamat</h5>
+            <p><a href = "https://www.google.com/maps/place/Ketapang,+Kec.+Susukan,+Kabupaten+Semarang,+Jawa+Tengah/@-7.4124605,110.607953,15z/data=!4m6!3m5!1s0x2e7a718277eaa1df:0x3b61ca3da9d8f45f!8m2!3d-7.4124605!4d110.607953!16s%2Fg%2F1236ymxx?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D">Desa Ketapang, Kecamatan Susukan, Kab. Semarang, Provinsi Jawa Tengah, Kode POS : 50777, Kode Wilayah Administrasi : 33.22.03.2005.</a></p>
+        </div>
+        <div class="footer-section">
+            <h5>Email</h5>
+            <p>gapoktanmajulestari.
+                ketapang@gmail.com</p>
+        </div>
+        <div class="footer-section">
+            <h5>Kontak</h5>
+            <p><a href="https://wa.me/6285290594240">085290594240</a></p>
+        </div>
+        <div class="footer-section">
+            <h5>Sosial Media</h5>
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png">   <a href="http://www.youtube.com/@gapoktanketapang">gapoktanketapang</a></p>
+            <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuH7c5cLpGehi0b4iQk90fXUzC9p7Ebla13w&s">   <a href="https://instagram.com/gapoktanmajulestari">gapoktanmajulestari</a></p>
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/600px-Facebook_logo_%28square%29.png">   <a href="https://www.facebook.com/share/1ABfqLYqnz/">Gapoktan Maju Lestari</a></p>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div id="copyright">
+        &copy; <b>2025. GAPOKTAN MAJU LESTARI</b> 
+    </div>
+</body>
+</html>
