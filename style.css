@@ -602,7 +602,7 @@ h5 {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     .wrapper {
         width: 90%;
         display: flex;
